@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listActivity">
+
+    <ListView
+        android:id="@+id/timeListView"
+        android:layout_width="323dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:gravity="center"
+        android:text="Choose the Time:"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/button_primary"
+        android:fontFamily="@font/nunito"
+        android:onClick="addtime"
+        android:text="  + Add a time  "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeListView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

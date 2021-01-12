@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_xxxhdpi"
+    tools:context=".clockActivity">
+
+    <TextView
+        android:id="@+id/clock1"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="115dp"
+        android:background="#000000"
+        android:fontFamily="@font/nunito"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clock2"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="35dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/nunito"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pauseplay"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="126dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:backgroundTint="#303F9F"
+        android:onClick="onclickpauseplay"
+        app:layout_constraintBottom_toTopOf="@+id/clock2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock1" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="41dp"
+        android:background="@android:drawable/ic_menu_agenda"
+        android:backgroundTint="#303F9F"
+        android:onClick="onclicklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toEndOf="@+id/pauseplay"
+        app:layout_constraintTop_toBottomOf="@+id/clock1" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="342dp"
+        android:background="@android:drawable/ic_menu_rotate"
+        android:backgroundTint="#303F9F"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pauseplay"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
